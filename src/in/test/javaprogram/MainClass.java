@@ -1,14 +1,13 @@
 package in.test.javaprogram;
 
-import in.test.programs.Programs;
+import in.test.programs.Factorial;
 
 public class MainClass {
 	
 	/**Main Class **/
 	public static void main(String[]  args) {
 		
-		Programs initFact= new Programs();
-		System.out.println(initFact.recursiveFac(5));
+		System.out.println(Factorial.recursiveFac(5));
 	}
 
 }
