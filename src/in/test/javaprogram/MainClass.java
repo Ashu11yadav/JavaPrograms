@@ -10,7 +10,7 @@ public class MainClass {
 		
 		/*System.out.println(Factorial.recursiveFac(5));*/
 	
-		ArmstrongNumber.armstrongNumber("125");
+		ArmstrongNumber.armstrongNumber("371");
 		
 		
 	}
