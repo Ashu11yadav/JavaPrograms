@@ -31,8 +31,33 @@ public class SortProgram {
 			System.out.println("Sorted Element: " + arr[s]);	
 		}
 		
-		
-		
 	}
+		
+		/**Ashu **/
+		public static void bubbleSortNewFunc(int[] value){
+			for(int j = 0 ; j < value.length - 1 ; j ++ ){
+				 for(int i = 0; i<value.length; i++)
+				 {
+					 if(i != value.length-1 )
+					 {if(value[i] > value[i + 1]){
+						 
+						int k = 0;
+						
+						k= value[i];
+						
+						value[i] = value[i + 1];
+						
+						value[i + 1] = k;
+						
+					 }
+					 }
+				 }
+				 }
+				 for(int i = 0; i<value.length; i++)
+				 System.out.println(value[i]);
+					   }
+	
+		
+	
 
 }
