@@ -1,6 +1,6 @@
 package in.test.programs;
 
-import java.util.logging.Logger;
+
 
 public class ArmstrongNumber {
 
@@ -13,8 +13,10 @@ public class ArmstrongNumber {
 		String[] numberArray= number.split("");
 		
 	  for (int i = 0; i < numberArray.length; i++) {
-		  newNumber+=(Integer.parseInt(numberArray[i])^3);
-		  System.out.println(""+(Integer.parseInt(numberArray[i])^3));
+		  int numb=Integer.parseInt(numberArray[i]);
+	
+		  newNumber+=(numb*numb *numb);
+		  System.out.println(""+(numb*numb *numb));
 	}
 		
 	  if(number.equalsIgnoreCase(String.valueOf(newNumber)))
