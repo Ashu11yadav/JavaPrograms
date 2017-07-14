@@ -13,7 +13,7 @@ public class MainClass {
 	
 	/*	ArmstrongNumber.armstrongNumber("125");*/
 		
-		int arr[] = {18,9,33,4,84,32};
+		int arr[] = {218,3,33,4,84,2};
 		SortProgram.bubbleSortFunc(arr);
 		
 		
