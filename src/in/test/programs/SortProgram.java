@@ -8,15 +8,21 @@ public class SortProgram {
 	 * 
 	 ***/
 
-	/*
-	 * Write a java program to sort an array elements using bubble sort
-	 * algorithm Input: 18 9 33 4 84 32 Output: 4 9 18 32 33 84
-	 */
-
 	/**
-	 * Not a bubble Sort .
+	 * Write a java program to sort an array elements using Selection Sort. > We
+	 * can create a java program to sort array elements using selection sort. In
+	 * selection sort algorithm, we search for the lowest element and arrange it
+	 * to the proper location. We swap the current element with the next lowest
+	 * number.
+	 * 
+	 * Or
+	 * 
+	 * Given a list, take the current element and exchange it with the smallest
+	 * element on the right hand side of the current element
+	 * 
+	 * Author: Tanuj Sareen
 	 **/
-	public static void bubbleSortFunc(int[] arr) {
+	public static void selectionSortFunc(int[] arr) {
 
 		for (int i = 0; i < arr.length; i++) {
 			for (int j = i + 1; j < arr.length; j++) {
@@ -33,28 +39,62 @@ public class SortProgram {
 		}
 
 	}
-	
-	
-	/**Tanuj Work **/
-	public static void bubbleSortNewFunct(int[] arr){
-		
-		for (int i = 0; i < arr.length-1; i++) {
-			for (int j = 0; j < arr.length-1; j++) {
-				if(arr[j]>arr[j+1]){
-					int temp = arr[j+1];
-					arr[j+1] = arr[j];
+
+	/**
+	 * 
+	 * Write a java program to sort an array elements using bubble sort > We can
+	 * create a java program to sort array elements using bubble sort. Bubble
+	 * sort algorithm is known as the simplest sorting algorithm. In bubble sort
+	 * algorithm, array is traversed from first element to last element. Here,
+	 * current element is compared with the next element. If current element is
+	 * greater than the next element, it is swapped.
+	 * 
+	 * algorithm Input: 18 9 33 4 84 32 Output: 4 9 18 32 33 84
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * Author: Tanuj Sareen
+	 **/
+	public static void bubbleSortNewFunct(int[] arr) {
+
+		for (int i = 0; i < arr.length - 1; i++) {
+			for (int j = 0; j < arr.length - 1; j++) {
+				if (arr[j] > arr[j + 1]) {
+					int temp = arr[j + 1];
+					arr[j + 1] = arr[j];
 					arr[j] = temp;
 				}
 			}
 		}
-		
+
 		for (int s = 0; s < arr.length; s++) {
 			System.out.println("Sorted Element: " + arr[s]);
 		}
 	}
-	
-	
-	
+
+	/**
+	 * Write a java program to sort an array elements using Insertion sort. > We
+	 * can create a java program to sort array elements using insertion sort.
+	 * Insertion is good for small elements only because it requires more time
+	 * for sorting large number of elements.
+	 * 
+	 * Or 
+	 * 
+	 * Given a list, take the current element and insert it at the appropriate
+	 * position of the list, adjusting the list every time you insert. It is
+	 * similar to arranging the cards in a Card game.
+	 **/
+	public static void insertionSort(int[] arr) {
+		
+		for (int i = 0; i < arr.length-1; i++) {
+			for (int j = 0; j < arr.length; j++) {
+				
+			}
+		}
+
+	}
 
 	/**
 	 * Ashu Bubble sort
@@ -73,7 +113,7 @@ public class SortProgram {
 				}
 			}
 		}
-		
+
 		for (int i = 0; i < value.length; i++)
 			System.out.println(value[i]);
 	}
