@@ -80,19 +80,28 @@ public class SortProgram {
 	 * Insertion is good for small elements only because it requires more time
 	 * for sorting large number of elements.
 	 * 
-	 * Or 
+	 * Or
 	 * 
 	 * Given a list, take the current element and insert it at the appropriate
 	 * position of the list, adjusting the list every time you insert. It is
 	 * similar to arranging the cards in a Card game.
+	 * 
+	 * {6,5,1,8,7,2,4}
 	 **/
 	public static void insertionSort(int[] arr) {
-		
-		for (int i = 0; i < arr.length-1; i++) {
-			for (int j = 0; j < arr.length; j++) {
-				
+
+		for (int i = 0; i < arr.length - 1; i++) {
+			for (int j = i; j > 0; j--) {
+				if (arr[j] < arr[j - 1]) {
+					int temp = arr[j];
+					arr[j] = arr[j - 1];
+					arr[j - 1] = temp;
+				}
 			}
 		}
+
+		for (int i = 0; i < arr.length; i++)
+			System.out.println(arr[i]);
 
 	}
 
