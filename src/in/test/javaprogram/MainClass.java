@@ -11,7 +11,7 @@ public class MainClass {
 	/**Main Class **/
 	public static void main(String[]  args) {
 		
-		StarPrintProgram.numberprintFunct(20); 
+		StarPrintProgram.starPrint6(10); 
 		
 		
 	}
