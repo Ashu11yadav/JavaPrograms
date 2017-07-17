@@ -2,7 +2,8 @@ package in.test.javaprogram;
 
 
 
-import in.test.programs.NumberPrintProgram;
+
+import in.test.programs.StarPrintProgram;
 
 
 public class MainClass {
@@ -10,7 +11,7 @@ public class MainClass {
 	/**Main Class **/
 	public static void main(String[]  args) {
 		
-		NumberPrintProgram.numberPrintFunc(5); 
+		StarPrintProgram.numberprintFunct(20); 
 		
 		
 	}
