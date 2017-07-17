@@ -20,6 +20,7 @@ Small Java Programs
 ![3](https://user-images.githubusercontent.com/8094093/28256222-c308e8a6-6add-11e7-8fd8-8023495015e7.jpg)
 ![4](https://user-images.githubusercontent.com/8094093/28256224-c30e1556-6add-11e7-9a48-8b3e5fde97b1.jpg)
 ![5](https://user-images.githubusercontent.com/8094093/28262618-45ae39b4-6b01-11e7-87b2-5a629d69de0f.jpg)
+![6](https://user-images.githubusercontent.com/8094093/28267159-605140f8-6b16-11e7-870d-b5615f5bcc2c.jpg)
 
 6. Number Print Program
 
