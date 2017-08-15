@@ -18,7 +18,8 @@ public class ProgramSelection {
 	builder.append("3. Palindrom \n");
 	builder.append("4. Sort Program \n");
 	builder.append("5. Star Program \n");
-	builder.append("6. Collection Framwork.. Burraaaa (New Feature) !! \n");	
+	builder.append("6. Number Program \n");
+	builder.append("7. Collection Framwork.. Burraaaa (New Feature) !! \n");	
 	
 	System.out.println(builder.toString());
 	
