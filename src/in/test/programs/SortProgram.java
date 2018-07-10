@@ -39,6 +39,21 @@ public class SortProgram {
 		}
 
 	}
+	
+	public String getSpecialReverse(String str){
+
+		String strings="";
+		for(int i=str.length();i>=0;i--){
+			if(i==0 ){
+				strings+=str.charAt(i);
+			}else
+		if(!strings.contains(""+str.charAt(i-1)) )
+			strings+=str.charAt(i-1);
+		}
+		
+		return strings;
+	}
+
 
 	/**
 	 * 
