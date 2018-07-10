@@ -114,6 +114,7 @@ public class StarPrintProgram {
 					System.out.print("*");
 				else
 					System.out.print(" ");
+
 			}
 			
 			if(start==1 && end==(column-1))

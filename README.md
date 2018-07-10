@@ -29,4 +29,8 @@ Small Java Programs
 ![2](https://user-images.githubusercontent.com/8094093/28267776-33bd309e-6b19-11e7-9081-c8e8c347fada.jpg)
 
 
+7. Collection FrameWork
+
+ ![collection-Hierarchy](https://user-images.githubusercontent.com/8094093/29313764-f3005a0a-81d8-11e7-9a9e-f51e9551f44a.png)
+
      
