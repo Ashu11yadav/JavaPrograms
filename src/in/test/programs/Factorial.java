@@ -35,4 +35,22 @@ public class Factorial {
 	}
 
 	/*** Factorial Function End ***/
+	
+	
+	
+	
+	public static void Factorial_2(String number) {
+		
+		int num=  Integer.parseInt(number);
+		int resultant=1;
+		
+		for(int i=num;i>=1;i--) {
+			resultant*=i;
+		}
+		
+		System.out.println("Factorial of :"+number+": "+resultant);
+		
+		
+		
+	}
 }

@@ -28,16 +28,16 @@ public class ProgramSelection {
 	
 	switch(selection) {
 	case 1:
-		/*371 is an Armstrong number since 3**3 + 7**3 + 1**3 = 371*/
+		/** 371 is an Armstrong number since : 3**3 + 7**3 + 1**3 = 371 **/
 		ArmstrongNumber.armStrongNumber_2("371");
 		break;
 	case 2:
-		/**Factorial **/
-		Factorial.FactorialFunc("5");
+		/**Factorial of 5 : 5*4*3*2*1 = 120 **/
+		Factorial.Factorial_2("5");
 		break;
 	case 3:
-		/**  **/
-		Palindrom.callPalindromFunc("1991");
+		/** Palindrome of 1991 is 1991 (Reverse) **/
+		Palindrom.callPalindromFunc_2("1991");
 	case 4:
 		/** **/
 	case 5:
