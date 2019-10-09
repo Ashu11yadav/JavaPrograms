@@ -29,7 +29,7 @@ public class ProgramSelection {
 	switch(selection) {
 	case 1:
 		/*371 is an Armstrong number since 3**3 + 7**3 + 1**3 = 371*/
-		ArmstrongNumber.armstrongNumber("371");
+		ArmstrongNumber.armStrongNumber_2("371");
 		break;
 	case 2:
 		/**Factorial **/

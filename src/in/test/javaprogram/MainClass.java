@@ -3,23 +3,21 @@ package in.test.javaprogram;
 import in.test.programs.SortProgram;
 
 public class MainClass {
-	
-	/**Main Class **/
-	public static void main(String[]  args) {
-		
 
-		/*NumberPrintProgram.numberPrintFun3(10); */
-		SortProgram program= new SortProgram();
-		program.getSpecialReverse("abbbaa");
+	/** Main Class **/
+	public static void main(String[] args) {
 
-		/*NumberPrintProgram.numberPrintFun3(10);*/
+		/* NumberPrintProgram.numberPrintFun3(10); */
+		/*
+		 * SortProgram program= new SortProgram(); program.getSpecialReverse("abbbaa");
+		 */
 
-	/*	ArrayListExample.callArrayList_Iterator();*/
-		
-		
-		/*ProgramSelection.inputSelection();*/
+		/* NumberPrintProgram.numberPrintFun3(10); */
 
-		
+		/* ArrayListExample.callArrayList_Iterator(); */
+
+		 ProgramSelection.inputSelection(); 
+
 	}
 
 }

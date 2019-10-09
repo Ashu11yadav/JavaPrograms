@@ -7,7 +7,7 @@ public class ArmstrongNumber {
 	/** Write a java program to check Armstrong number.**/
 	
 	/** If the number is nth Digit fix **/
-	public static void armstrongNumber(String number) {
+	public static void armstrongNumber_1(String number) {
 		
 		int newNumber=0;		
 		String[] numberArray= number.split("");
@@ -25,5 +25,23 @@ public class ArmstrongNumber {
 		  System.out.println("OOpss !! Number is not Armstrong :(  ");
 		
 	}
+	
+	
+	public static void armStrongNumber_2(String number) {
+		
+		int resultant= 0;
+		
+		for(int i =0; i<number.length();i++) {
+			int charAct= Integer.parseInt(number.charAt(i)+"");
+			resultant+= charAct*charAct*charAct;
+		}
+		
+		if(number.equals(String.valueOf(resultant))) {
+			System.out.println(resultant+"is ArmsStrong Numnber");
+		}else {
+			System.out.println(resultant+"is Not an ArmStrong Number");
+		}
+	}
+	
 	
 }
