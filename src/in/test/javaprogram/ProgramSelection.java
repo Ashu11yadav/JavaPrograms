@@ -5,6 +5,8 @@ import java.util.Scanner;
 import in.test.programs.ArmstrongNumber;
 import in.test.programs.Factorial;
 import in.test.programs.Palindrom;
+import in.test.programs.sort.BubbleSort;
+import in.test.programs.sort.SelectionSort;
 
 public class ProgramSelection {
 	
@@ -39,7 +41,10 @@ public class ProgramSelection {
 		/** Palindrome of 1991 is 1991 (Reverse) **/
 		Palindrom.callPalindromFunc_2("1991");
 	case 4:
-		/** **/
+		/** Sort Program **/
+		int[] number= {8,6,3,1,2,5};
+		
+		SelectionSort.selectionSort_1(number);
 	case 5:
 	case 6:
 	case 7:
