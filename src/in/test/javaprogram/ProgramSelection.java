@@ -2,6 +2,7 @@ package in.test.javaprogram;
 
 import java.util.Scanner;
 
+import in.test.javaprogram.stringvalid.StringValidation;
 import in.test.programs.ArmstrongNumber;
 import in.test.programs.Factorial;
 import in.test.programs.Palindrom;
@@ -22,6 +23,7 @@ public class ProgramSelection {
 	builder.append("5. Star Program \n");
 	builder.append("6. Number Program \n");
 	builder.append("7. Collection Framwork.. Burraaaa (New Feature) !! \n");	
+	builder.append("8. String Validation \n");	
 	
 	System.out.println(builder.toString());
 	
@@ -48,6 +50,8 @@ public class ProgramSelection {
 	case 5:
 	case 6:
 	case 7:
+	case 8: 
+		System.out.println(StringValidation.isValid("()"));
 		break;
 	
 	}
