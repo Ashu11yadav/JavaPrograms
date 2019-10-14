@@ -31,7 +31,7 @@ public class StringValidation {
 	        if(s.charAt(i)=='{' || s.charAt(i)=='[' || s.charAt(i)=='('){
 	            stack.push(s.charAt(i));
 	        }else if(s.charAt(i)=='}' || s.charAt(i)==']' || s.charAt(i)==')'){
-	            if(map.get(s.charAt(i))==stack.peek()){
+	            if(!stack.isEmpty() && map.get(s.charAt(i))==stack.peek()){
 	                stack.pop();
 	            }else {
 	                
