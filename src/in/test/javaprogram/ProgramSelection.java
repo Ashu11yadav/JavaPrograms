@@ -7,6 +7,7 @@ import in.test.javaprogram.linkedListProg.ListNode;
 import in.test.javaprogram.stringvalid.StringValidation;
 import in.test.programs.ArmstrongNumber;
 import in.test.programs.Factorial;
+import in.test.programs.MaxSubArray;
 import in.test.programs.Palindrom;
 import in.test.programs.RemoveDuplicates;
 import in.test.programs.sort.SelectionSort;
@@ -27,7 +28,8 @@ public class ProgramSelection {
 		builder.append("7. Collection Framwork.. Burraaaa (New Feature) !! \n");
 		builder.append("8. String Validation \n");
 		builder.append("9. Linked List Program Collections \n");
-		builder.append("10.Remove Duplicate elements from Array & Print Count \n");
+		builder.append("10. Remove Duplicate elements from Array & Print Count \n");
+		builder.append("11. Maximum Subarray \n");
 
 		System.out.println(builder.toString());
 
@@ -65,9 +67,17 @@ public class ProgramSelection {
 		}
 			break;
 		case 10: {
-			int[] nums={0,0,1,1,1,2,2,3,3,4,5};
+			int[] nums = { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4, 5 };
 			RemoveDuplicates.removeDuplicates(nums);
 		}
+			break;
+
+		case 11: {
+
+			int[] nums = {-2,-1,-3};
+			MaxSubArray.maxSubArray(nums);
+		}
+
 		}
 
 		scanner.close();
