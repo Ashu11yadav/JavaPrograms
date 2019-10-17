@@ -4,9 +4,11 @@ import java.util.Scanner;
 
 import in.test.javaprogram.linkedListProg.LinkedListCollections;
 import in.test.javaprogram.linkedListProg.ListNode;
+import in.test.javaprogram.stringFind.StringFind1;
 import in.test.javaprogram.stringvalid.StringValidation;
 import in.test.programs.ArmstrongNumber;
 import in.test.programs.Factorial;
+import in.test.programs.LongestCommonPrefix;
 import in.test.programs.MaxSubArray;
 import in.test.programs.Palindrom;
 import in.test.programs.RemoveDuplicates;
@@ -30,6 +32,8 @@ public class ProgramSelection {
 		builder.append("9. Linked List Program Collections \n");
 		builder.append("10. Remove Duplicate elements from Array & Print Count \n");
 		builder.append("11. Maximum Subarray \n");
+		builder.append("12. Longest Common Prefix \n");
+		builder.append("13. String Find \n");
 
 		System.out.println(builder.toString());
 
@@ -62,7 +66,6 @@ public class ProgramSelection {
 			System.out.println(StringValidation.isValid("()"));
 			break;
 		case 9: {
-
 			LinkedListCollections.mergeTwoLists(new ListNode(1), new ListNode(1));
 		}
 			break;
@@ -73,10 +76,22 @@ public class ProgramSelection {
 			break;
 
 		case 11: {
-
-			int[] nums = {-2,-1,-3};
+			int[] nums = { -2, -1, -3 };
 			MaxSubArray.maxSubArray(nums);
 		}
+			break;
+
+		case 12: {
+			String[] strs = { "flower", "flow", "flight" };
+			LongestCommonPrefix.longestCommonPrefix_2(strs);
+		}
+			break;
+
+		case 13: {
+			String haystack=""; String needle="a";
+			System.out.println("count:" + StringFind1.strStr(haystack, needle));
+		}
+			break;
 
 		}
 

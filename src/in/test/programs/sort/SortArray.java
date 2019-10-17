@@ -17,7 +17,7 @@ public class SortArray {
 	public static void sortArray(int[] num) {
 
 		for (int i = 0; i < num.length; i++) {
-
+       
 			
 		}
 
