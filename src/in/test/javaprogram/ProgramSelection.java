@@ -5,6 +5,7 @@ import java.util.Scanner;
 import in.test.javaprogram.linkedListProg.LinkedListCollections;
 import in.test.javaprogram.linkedListProg.ListNode;
 import in.test.javaprogram.stringFind.StringFind1;
+import in.test.javaprogram.stringTag.StringQues;
 import in.test.javaprogram.stringvalid.StringValidation;
 import in.test.programs.ArmstrongNumber;
 import in.test.programs.Factorial;
@@ -34,6 +35,7 @@ public class ProgramSelection {
 		builder.append("11. Maximum Subarray \n");
 		builder.append("12. Longest Common Prefix \n");
 		builder.append("13. String Find \n");
+		builder.append("14. String Ques. \n");
 
 		System.out.println(builder.toString());
 
@@ -88,8 +90,21 @@ public class ProgramSelection {
 			break;
 
 		case 13: {
-			String haystack=""; String needle="a";
+			String haystack = "";
+			String needle = "a";
 			System.out.println("count:" + StringFind1.strStr(haystack, needle));
+		}
+			break;
+
+		case 14: {
+			/*
+			 * String lengthOfLastWord="Hello World"; System.out.println("lengthOfLastWord:"
+			 * + StringQues.lengthOfLastWord(lengthOfLastWord));
+			 */
+
+			System.out.println("addBinary:" + StringQues.addBinary_accepted(
+					"10100000100100110110010000010101111011011001101110111111111101000000101111001110001111100001101",
+					"110101001011101110001111100110001010100001101011101010000011011011001011101111001100000011011110011"));
 		}
 			break;
 
