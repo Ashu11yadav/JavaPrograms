@@ -1,5 +1,9 @@
 package in.test.javaprogram.stringTag;
 
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+
 public class StringQues {
 
 	public StringQues() {
@@ -163,7 +167,7 @@ public class StringQues {
 		String vowels = "aeiouAEIOU";
 		char[] c = s.toCharArray();
 
-		while (left < right ) {
+		while (left < right) {
 
 			while (left < right && !vowels.contains(c[left] + ""))
 				left++;
@@ -183,27 +187,73 @@ public class StringQues {
 		return String.valueOf(c);
 
 	}
-	
-	
-	 public boolean canConstruct(String ransomNote, String magazine) {
-	        
-	        if((ransomNote.isEmpty() && magazine.isEmpty())|| ransomNote.isEmpty() && !magazine.isEmpty())
-	            return true;        
-	        else if(ransomNote.isEmpty())
-	            return false;        
-	        else if(magazine.isEmpty())
-	            return  false;
-	        
-	        int f=0;
-	        for(int i=0;i <magazine.length();i++){
-	            if( f<=ransomNote.length()-1 && magazine.charAt(i)==ransomNote.charAt(f) )
-	                f++;
-	        }
-	        
-	        if(f>0 && f==ransomNote.length())
-	            return true;
-	            else
-	            return false;
-	        
-	    }
+
+	/*
+	 * 383. Ransom Note Given an arbitrary ransom note string and another string
+	 * containing letters from all the magazines, write a function that will return
+	 * true if the ransom note can be constructed from the magazines ; otherwise, it
+	 * will return false.
+	 * 
+	 * Each letter in the magazine string can only be used once in your ransom note.
+	 * 
+	 * Note: You may assume that both strings contain only lowercase letters.
+	 * 
+	 * canConstruct("a", "b") -> false canConstruct("aa", "ab") -> false
+	 * canConstruct("aa", "aab") -> true
+	 */
+	public static boolean canConstruct(String ransomNote, String magazine) {
+
+		int[] arr = new int[26];
+		for (int i = 0; i < magazine.length(); i++) {
+			System.out.println("magazine.charAt(i):" + magazine.charAt(i) + ", 'a': " + 'a'
+					+ ", magazine.charAt(i) - 'a'" + (magazine.charAt(i) - 'a') + ", arr[magazine.charAt(i) - 'a']++: "
+					+ arr[magazine.charAt(i) - 'a']++);
+
+			arr[magazine.charAt(i) - 'a']++;
+		}
+
+		for (int i = 0; i < arr.length; i++) {
+			System.out.println("i:" + i + ", arr[" + i + "]: " + arr[i]);
+		}
+
+		for (int i = 0; i < ransomNote.length(); i++) {
+
+			System.out.println("ransomNote.charAt(i): " + ransomNote.charAt(i) + "-" + 'a'
+					+ ", ransomNote.charAt(i) - 'a': " + (ransomNote.charAt(i) - 'a'));
+			if (--arr[ransomNote.charAt(i) - 'a'] < 0) {
+				return false;
+			}
+		}
+		return true;
+
+	}
+
+	/*
+	 * 387. First Unique Character in a String Given a string, find the first
+	 * non-repeating character in it and return it's index. If it doesn't exist,
+	 * return -1.
+	 * 
+	 * Examples:
+	 * 
+	 * s = "leetcode" return 0.
+	 * 
+	 * s = "loveleetcode", return 2. Note: You may assume the string contain only
+	 * lowercase letters.
+	 */
+	public static int firstUniqChar(String s) {
+
+		Map<Character, Integer> map = new HashMap();
+
+		for (int i = 0; i < s.length(); i++) {
+			map.put(s.charAt(i), (map.getOrDefault(s.charAt(i), 0) + 1));
+		}
+
+		for (HashMap.Entry<Character, Integer> mp : map.entrySet()) {
+			/* if(map.) */
+
+			// to be continued................
+		}
+		return -1;
+	}
+
 }

@@ -97,25 +97,10 @@ public class ProgramSelection {
 			break;
 
 		case 14: {
-			/*
-			 * String lengthOfLastWord="Hello World"; System.out.println("lengthOfLastWord:"
-			 * + StringQues.lengthOfLastWord(lengthOfLastWord));
-			 */
 
-			/*
-			 * System.out.println("addBinary:" + StringQues.addBinary_accepted(
-			 * "10100000100100110110010000010101111011011001101110111111111101000000101111001110001111100001101",
-			 * "110101001011101110001111100110001010100001101011101010000011011011001011101111001100000011011110011"
-			 * ));
-			 */
-			
-			/*
-			 * String isPalindrome="A man, a plan, a canal: Panama";
-			 * StringQues.isPalindrome(isPalindrome);
-			 */
-			String reverseVowels="Hello";
-			StringQues.reverseVowels(reverseVowels);
-			
+			String firstUniqChar = "loveleetcode";
+			System.out.println("firstUniqChar:" +StringQues.firstUniqChar(firstUniqChar));
+
 		}
 			break;
 
