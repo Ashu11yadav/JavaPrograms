@@ -97,10 +97,8 @@ public class ProgramSelection {
 			break;
 
 		case 14: {
-			String num1 = "584";
-			String num2 = "18";
-			
-			System.out.println("addStrings:" + StringQues.addStrings(num1, num2));
+			String countSegments = "    foo    bar";
+			System.out.println("countSegments:" + StringQues.countSegments_2(countSegments));
 
 		}
 			break;
