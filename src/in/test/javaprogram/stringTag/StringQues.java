@@ -242,17 +242,16 @@ public class StringQues {
 	 */
 	public static int firstUniqChar(String s) {
 
-		Map<Character, Integer> map = new HashMap();
+		Map<Character, Integer> map = new HashMap<Character, Integer>();
 
 		for (int i = 0; i < s.length(); i++) {
 			map.put(s.charAt(i), (map.getOrDefault(s.charAt(i), 0) + 1));
 		}
 
-		for (HashMap.Entry<Character, Integer> mp : map.entrySet()) {
-			/* if(map.) */
-
-			// to be continued................
+		for(int i =0;i<s.length();i++) {
+			if(map.get(s.charAt(i))==1) return i;
 		}
+		
 		return -1;
 	}
 
