@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 
+import com.sun.xml.internal.ws.util.StringUtils;
+
 public class StringQues {
 
 	public StringQues() {
@@ -248,11 +250,68 @@ public class StringQues {
 			map.put(s.charAt(i), (map.getOrDefault(s.charAt(i), 0) + 1));
 		}
 
-		for(int i =0;i<s.length();i++) {
-			if(map.get(s.charAt(i))==1) return i;
+		for (int i = 0; i < s.length(); i++) {
+			if (map.get(s.charAt(i)) == 1)
+				return i;
 		}
-		
+
 		return -1;
+	}
+
+	/*
+	 * 415. Add Strings Given two non-negative integers num1 and num2 represented as
+	 * string, return the sum of num1 and num2.
+	 * 
+	 * Note:
+	 * 
+	 * The length of both num1 and num2 is < 5100. Both num1 and num2 contains only
+	 * digits 0-9. Both num1 and num2 does not contain any leading zero. You must
+	 * not use any built-in BigInteger library or convert the inputs to integer
+	 * directly.
+	 */
+	public static String addStrings(String num1, String num2) {
+
+		int l1 = (num1.length() - 1);
+		int l2 = (num2.length() - 1);
+
+		char[] n1 = num1.toCharArray();
+		char[] n2 = num2.toCharArray();
+
+		String sum = "";
+		boolean carry = false;
+
+		for (int i = l1, j = l2; i >= 0 || j >= 0 || carry; i--, j--) {
+
+			int n1Int = 0;
+			int n2Int = 0;
+
+			if (i >= 0)
+				n1Int = Integer.parseInt(n1[i] + "");
+
+			if (j >= 0)
+				n2Int = Integer.parseInt(n2[j] + "");
+
+			if (carry) {
+
+				if (n1Int + n2Int + 1 > 9) {
+					sum = ((n1Int + n2Int + 1) % 10) + sum;
+					carry = true;
+				} else {
+					sum = (n1Int + n2Int+1) + sum;
+					carry = false;
+				}
+			} else if (n1Int + n2Int > 9) {
+				sum = ((n1Int + n2Int) % 10) + sum;
+				carry = true;
+			} else {
+				sum = (n1Int + n2Int) + sum;
+				carry = false;
+			}
+
+		}
+
+		return sum;
+
 	}
 
 }

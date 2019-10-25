@@ -97,9 +97,10 @@ public class ProgramSelection {
 			break;
 
 		case 14: {
-
-			String firstUniqChar = "loveleetcode";
-			System.out.println("firstUniqChar:" +StringQues.firstUniqChar(firstUniqChar));
+			String num1 = "584";
+			String num2 = "18";
+			
+			System.out.println("addStrings:" + StringQues.addStrings(num1, num2));
 
 		}
 			break;
