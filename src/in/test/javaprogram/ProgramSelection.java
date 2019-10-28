@@ -97,8 +97,8 @@ public class ProgramSelection {
 			break;
 
 		case 14: {
-			String countSegments = "    foo    bar";
-			System.out.println("countSegments:" + StringQues.countSegments_2(countSegments));
+			char[] compress = { 'a', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b' };
+			System.out.println("compress:" + StringQues.compress(compress));
 
 		}
 			break;
