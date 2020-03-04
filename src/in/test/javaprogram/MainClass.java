@@ -1,7 +1,5 @@
 package in.test.javaprogram;
 
-import in.test.programs.SortProgram;
-
 public class MainClass {
 
 	/** Main Class **/
