@@ -1,5 +1,6 @@
 package in.test.javaprogram;
 
+import in.test.javaprogram.array.ArrayQues;
 import in.test.programs.polymorphism.Polymorphism;
 
 public class MainClass {
@@ -18,8 +19,14 @@ public class MainClass {
 
 		/* ProgramSelection.inputSelection(); */
 		
-		Polymorphism polymorphism= new Polymorphism();
-		polymorphism.callQuest103();
+		/*
+		 * Polymorphism polymorphism= new Polymorphism(); polymorphism.callQuest103();
+		 */
+		
+		int[] nums = {1,3,5,7};
+		
+		int value= ArrayQues.searchInsert(nums, 5);
+		System.out.println(""+value);
 
 	}
 
