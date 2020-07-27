@@ -412,12 +412,31 @@ public class StringQues {
 	 * the array.
 	 * 
 	 * 
-	 * Note:
+	 * Note: Working on it. Not an exact answere
 	 * 
 	 * All characters have an ASCII value in [35, 126]. 1 <= len(chars) <= 1000.
 	 */
 	public static int compress(char[] chars) {
-		
+
+		if (chars.length == 0)
+			return 0;
+
+		char temp = chars[0];
+		int c = 1;
+
+		for (int i = 1; i <= chars.length - 1; i++) {
+
+			if (temp == chars[i]) {
+				c++;
+			} else if (i == chars.length - 1) {
+
+			} else {
+				temp = chars[i];
+				chars[i - 1] = Character.forDigit(c, 10);
+				c = 1;
+			}
+		}
+
 		return 0;
 
 	}
