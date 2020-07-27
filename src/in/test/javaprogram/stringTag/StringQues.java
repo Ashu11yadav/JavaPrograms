@@ -1,10 +1,8 @@
 package in.test.javaprogram.stringTag;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
 
-import com.sun.xml.internal.ws.util.StringUtils;
 
 public class StringQues {
 
@@ -418,26 +416,24 @@ public class StringQues {
 	 */
 	public static int compress(char[] chars) {
 
-		if (chars.length == 0)
-			return 0;
 
-		char temp = chars[0];
-		int c = 1;
+		int anchor = 0, write = 0;
+        for (int read = 0; read < chars.length; read++) {
+            if (read + 1 == chars.length || chars[read + 1] != chars[read]) {
+                chars[write++] = chars[anchor];
+                if (read > anchor) {
+                    for (char c: ("" + (read - anchor + 1)).toCharArray()) {
+                        chars[write++] = c;
+                    }
+                }
+                anchor = read + 1;
+            }
+        }
+        System.out.println("chars:" + String.valueOf(chars));
+        return write;
 
-		for (int i = 1; i <= chars.length - 1; i++) {
-
-			if (temp == chars[i]) {
-				c++;
-			} else if (i == chars.length - 1) {
-
-			} else {
-				temp = chars[i];
-				chars[i - 1] = Character.forDigit(c, 10);
-				c = 1;
-			}
-		}
-
-		return 0;
-
+	
 	}
+
+	
 }

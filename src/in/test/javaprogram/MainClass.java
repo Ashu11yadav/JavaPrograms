@@ -1,6 +1,6 @@
 package in.test.javaprogram;
 
-import in.test.programs.SortProgram;
+import in.test.programs.polymorphism.Polymorphism;
 
 public class MainClass {
 
@@ -16,7 +16,10 @@ public class MainClass {
 
 		/* ArrayListExample.callArrayList_Iterator(); */
 
-		 ProgramSelection.inputSelection(); 
+		/* ProgramSelection.inputSelection(); */
+		
+		Polymorphism polymorphism= new Polymorphism();
+		polymorphism.callQuest103();
 
 	}
 
