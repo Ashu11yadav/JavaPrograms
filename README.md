@@ -1,5 +1,14 @@
 # JavaPrograms
-Small Java Programs
+
+Key Points:
+
+ > Small Java Programs : Added Leet Code Question  & Answers solved by me
+  
+ > Maintaining the Repository from 2017
+ 
+ > More will come: Thanks :))
+
+
 
 1. ArmstrongNumber
 
